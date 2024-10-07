@@ -1,6 +1,7 @@
 ﻿using Runtime.Commands.Level;
 using Runtime.Data.UnityObjects;
 using Runtime.Data.ValueObjects;
+using Runtime.Enums.UI;
 using Runtime.Signals;
 using UnityEngine;
 
@@ -83,6 +84,7 @@ namespace Runtime.Managers
         private void Start()
         {
             CoreGameSignals.Instance.onLevelInitialize?.Invoke((byte)(_currentLevel % totalLevelCount));
+            CoreUISignals.Instance.onOpenPanel?.Invoke(UIPanelTypes.Start, 1f);
         }
 
         public void OnNextLevel()
