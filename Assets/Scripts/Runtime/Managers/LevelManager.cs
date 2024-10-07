@@ -84,7 +84,7 @@ namespace Runtime.Managers
         private void Start()
         {
             CoreGameSignals.Instance.onLevelInitialize?.Invoke((byte)(_currentLevel % totalLevelCount));
-            CoreUISignals.Instance.onOpenPanel?.Invoke(UIPanelTypes.Start, 1f);
+            CoreUISignals.Instance.onOpenPanel?.Invoke(UIPanelTypes.Start, 1);
         }
 
         public void OnNextLevel()

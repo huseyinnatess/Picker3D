@@ -26,5 +26,6 @@ namespace Runtime.Signals
         public UnityAction onInputTaken = delegate {  };
         public UnityAction onInputReleased = delegate {  };
         public UnityAction<HorizontalInputParams> onInputDragged = delegate {  };
+        public UnityAction onEnableInput = delegate {  };
     }
 }
