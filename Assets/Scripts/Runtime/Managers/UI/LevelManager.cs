@@ -5,7 +5,7 @@ using Runtime.Enums.UI;
 using Runtime.Signals;
 using UnityEngine;
 
-namespace Runtime.Managers
+namespace Runtime.Managers.UI
 {
     public class LevelManager : MonoBehaviour
     {

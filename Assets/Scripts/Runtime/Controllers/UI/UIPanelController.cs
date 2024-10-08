@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Runtime.Enums.UI;
 using Runtime.Signals;
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace Runtime.Controllers.UI
@@ -31,23 +32,34 @@ namespace Runtime.Controllers.UI
             CoreUISignals.Instance.onCloseAllPanels += CloseAllPanels;
         }
 
+        [Button("OpenPanel")]
         private void OpenPanel(UIPanelTypes panelType, int index)
         {
             ClosePanel(index);
-            Instantiate(Resources.Load<GameObject>($"Screens{panelType}Panel"), layers[index]);
+            Instantiate(Resources.Load<GameObject>($"Screens/{panelType}Panel"), layers[index]);
         }
 
+        [Button("ClosePanel")]
         private void ClosePanel(int index)
         {
             if (layers[index].childCount <= 0) return;
+#if UNITY_EDITOR
+            DestroyImmediate(layers[index].GetChild(0).gameObject);
+#else
             Destroy(layers[index].GetChild(0).gameObject);
+#endif
         }
-        
+
+        [Button("CloseAllPanels")]
         private void CloseAllPanels()
         {
             foreach (var layer in layers.Where(layer => layer.childCount > 0))
             {
+#if UNITY_EDITOR
+                DestroyImmediate(layer.GetChild(0).gameObject);
+#else
                 Destroy(layer.GetChild(0).gameObject);
+#endif
             }
         }
 

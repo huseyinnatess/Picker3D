@@ -2,7 +2,7 @@
 using Runtime.Signals;
 using UnityEngine;
 
-namespace Runtime.Managers
+namespace Runtime.Managers.UI
 {
     public class UIManager : MonoBehaviour
     {
