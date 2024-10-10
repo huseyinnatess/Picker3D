@@ -9,9 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64963322b6ee89741b48e474f6a042c1, type: 3}
-  m_Name: CD_Level
+  m_Script: {fileID: 11500000, guid: 82af58e431e790243bd0ca8d082a45d7, type: 3}
+  m_Name: CD_Input
   m_EditorClassIdentifier: 
-  Levels:
-  - Pools:
-    - RequireObjectCount: 5
+  Data:
+    HorizontalInputSpeed: 0
+    ClampValues: {x: 0, y: 0}
+    ClampSpeed: 0

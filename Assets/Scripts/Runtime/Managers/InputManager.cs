@@ -44,7 +44,7 @@ namespace Runtime.Managers
 
         private void SubscribeEvents()
         {
-            CoreGameSignals.Instance.onReset += OnReset;
+//            CoreGameSignals.Instance.onReset += OnReset;
             InputSignals.Instance.onEnableInput += OnEnableInput;
             InputSignals.Instance.onDisableInput += OnDisableInput;
         }

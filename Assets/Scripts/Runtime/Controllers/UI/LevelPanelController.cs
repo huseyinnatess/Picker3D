@@ -40,7 +40,7 @@ namespace Runtime.Controllers.UI
         private void OnSetLevelValue(byte levelValue)
         {
             levelTexts[0].text = (++levelValue).ToString();
-            levelTexts[1].text = levelValue + 1.ToString();
+            levelTexts[1].text = (levelValue + 1).ToString();
         }
 
 

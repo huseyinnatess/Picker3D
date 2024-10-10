@@ -13,7 +13,7 @@ namespace Runtime.Signals
         {
             if (Instance != null && Instance != this)
             {
-                Destroy(this);
+                Destroy(gameObject);
                 return;
             }
 

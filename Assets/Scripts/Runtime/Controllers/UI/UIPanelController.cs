@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using Runtime.Enums.UI;
 using Runtime.Signals;
@@ -14,7 +13,7 @@ namespace Runtime.Controllers.UI
 
         #region SerializeField Variables
 
-        [SerializeField] List<Transform> layers = new List<Transform>();
+        [SerializeField] private List<Transform> layers;
 
         #endregion
 
@@ -37,6 +36,7 @@ namespace Runtime.Controllers.UI
         {
             ClosePanel(index);
             Instantiate(Resources.Load<GameObject>($"Screens/{panelType}Panel"), layers[index]);
+
         }
 
         [Button("ClosePanel")]
