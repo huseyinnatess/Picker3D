@@ -59,6 +59,7 @@ namespace Runtime.Managers.UI
             UISignals.Instance.onPlay?.Invoke();
             CoreUISignals.Instance.onClosePanel?.Invoke(1);
             InputSignals.Instance.onEnableInput?.Invoke();
+            CameraSignals.Instance.onSetCameraTarget?.Invoke();
         }
 
         public void NextLevel()
