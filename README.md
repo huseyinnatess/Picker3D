@@ -50,8 +50,6 @@ This project was a significant milestone in my Unity development journey. It pro
 
 ## TR
 
-# Picker3D
-
 Picker3D, çeşitli yazılım mühendisliği prensipleri ve Unity araçlarını kullanarak modüler, verimli ve sektörel standartlara uygun bir oyun oluşturmayı hedefleyen Unity tabanlı bir 3D oyun projesidir. Bu proje, Udemy üzerindeki "Unity 3D | C# | UML | Doğru ve Sektörel Kod Yazımı (2024)" kursu aracılığıyla geliştirilmiştir.
 
 ## Proje Özellikleri
