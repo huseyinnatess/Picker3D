@@ -1,4 +1,7 @@
 # Picker3D
+
+![Project Demo](Gif/Picker3D.gif)
+
 ## EN
 
 Picker3D is a Unity-based 3D game project aimed at creating a modular, efficient, and industry-standard game by applying various software engineering principles and Unity tools. This project was developed through the Udemy course "Unity 3D | C# | UML | Doğru ve Sektörel Kod Yazımı (2024)."
